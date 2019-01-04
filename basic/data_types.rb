@@ -126,15 +126,18 @@ class Data_Types
     puts "value of array #{val} "
   end
   arr_a.map {|val| "v #{val}"}
-  arr_a.select{|val| val > a} # lay cac gia tri phu hop voi dieu kien
-  arr_a.reject {|val| val >a} # loai bo cac phan tu phu hop dieu kien
+  arr_a.select {|val| val > a} # lay cac gia tri phu hop voi dieu kien
+  arr_a.reject {|val| val > a} # loai bo cac phan tu phu hop dieu kien
 
 
   # Symbol
 
+  symbol = :hello
 
-  
-  puts phantucuoicung
+  if symbol.kind_of? Symbol
+    puts "true"
+  end
+
 
 
 
